@@ -21232,6 +21232,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device="">
 <attribute name="DESIGNER" value="Marshall Taylor"/>
+<attribute name="VERSION" value="v03"/>
 </part>
 <part name="JP1" library="Testing" deviceset="TEENSY-3.1" device="NOSILK"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -21316,7 +21317,7 @@ AGND from GND</text>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="V" x="147.32" y="0">
-<attribute name="DESIGNER" x="167.64" y="12.7" size="2.54" layer="94" font="vector" align="center-left"/>
+<attribute name="DESIGNER" x="172.72" y="12.7" size="2.54" layer="94" font="vector" align="center-left"/>
 <attribute name="VERSION" x="236.22" y="7.62" size="2.54" layer="94" font="vector" align="center-left"/>
 </instance>
 <instance part="JP1" gate="G$1" x="180.34" y="142.24"/>
