@@ -263,6 +263,8 @@
 <text x="7.3025" y="47.625" size="0.8128" layer="22" font="vector" ratio="15" rot="MR180" align="center">A14/DAC</text>
 <text x="19.3675" y="49.8475" size="1.016" layer="21" font="vector" ratio="15" align="center">TNSY</text>
 <text x="26.035" y="49.8475" size="1.016" layer="21" font="vector" ratio="15" rot="R180" align="center">EXT</text>
+<text x="13.335" y="12.7" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center">AGND</text>
+<text x="17.145" y="12.7" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center">DGND</text>
 <text x="5.08" y="49.2125" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="center-left">20</text>
 <text x="5.08" y="54.2925" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="center-left">21</text>
 <text x="8.5725" y="3.175" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center-left">VIN</text>
@@ -2471,6 +2473,7 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="SWCH-08247" x="16.51" y="83.5025" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="SJ1" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_PASTE_YES_SILK" value="D_TX" x="6.35" y="54.2925" smashed="yes"/>
+<element name="SJ2" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_PASTE_YES_SILK" value="D_TX" x="15.24" y="12.7" smashed="yes"/>
 <element name="SJ3" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_PASTE_YES_SILK" value="D_RX" x="6.35" y="49.2125" smashed="yes"/>
 <element name="SJ4" library="SparkFun-Passives" package="PAD-JUMPER-3-2OF3_NC_BY_PASTE_YES_SILK_FULL_BOX" value="JUMPER-PAD-3-2OF3_NC_BY_PASTE" x="22.86" y="49.8475" smashed="yes" rot="R180"/>
 <element name="SJ5" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_YES_SILK" value="EXT_JPR" x="10.16" y="4.445" smashed="yes"/>
@@ -2615,7 +2618,18 @@ design rules under a new name.</description>
 <wire x1="5.715" y1="71.4375" x2="5.2725" y2="71.88" width="0.254" layer="1"/>
 <wire x1="6.6675" y1="71.4375" x2="10.16" y2="74.93" width="0.254" layer="1"/>
 </signal>
+<signal name="AGND">
+<contactref element="SJ2" pad="1"/>
+<contactref element="JP1" pad="AGND"/>
+<wire x1="8.89" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="1"/>
+<wire x1="7.62" y1="10.16" x2="5.08" y2="7.62" width="0.254" layer="1"/>
+<contactref element="JP7" pad="3"/>
+<wire x1="5.08" y1="7.62" x2="1.27" y2="7.62" width="0.254" layer="1"/>
+<wire x1="8.89" y1="10.16" x2="11.43" y2="12.7" width="0.254" layer="1"/>
+<wire x1="11.43" y1="12.7" x2="14.8391" y2="12.7" width="0.254" layer="1"/>
+</signal>
 <signal name="GND">
+<contactref element="SJ2" pad="2"/>
 <contactref element="JP1" pad="GND1"/>
 <contactref element="JP1" pad="GND"/>
 <contactref element="JP4" pad="1"/>
@@ -2703,8 +2717,6 @@ design rules under a new name.</description>
 <contactref element="JP2" pad="1"/>
 <contactref element="JP9" pad="10"/>
 <contactref element="JP8" pad="2"/>
-<contactref element="JP1" pad="AGND"/>
-<contactref element="JP7" pad="3"/>
 </signal>
 <signal name="DIO4">
 <wire x1="24.86" y1="57.88" x2="24.13" y2="57.15" width="0.254" layer="1"/>
