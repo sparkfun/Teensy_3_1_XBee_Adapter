@@ -129,8 +129,8 @@ void loop()
     Serial1.print(padDownState);
     Serial1.print(btnStartState);
     Serial1.print(btnSelectState);
-    Serial1.print(btnAState);
     Serial1.print(btnBState);
+    Serial1.print(btnAState);
 
     // fill the rest of the packet with zeros
     Serial1.print('0');
