@@ -1,4 +1,4 @@
-//Serial loop-back test using the hardware uart on pins 0/1 (UART1).
+//Serial test using the hardware uart on pins 0/1 (UART1).
 //Connect an XBee and Teensy 3.1 to the adapter board
 //Connect an XBee to a serial terminal of your choice (USB dongle for example)
 //
@@ -12,7 +12,7 @@
 
 void setup()
 {
-  //Begin serial monitor
+  //Begin serial monitor port
   Serial.begin(9600);
   //Begin HW serial
   Serial1.begin(9600);
