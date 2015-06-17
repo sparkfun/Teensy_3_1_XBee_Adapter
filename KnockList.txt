@@ -1,0 +1,20 @@
+Teensy 3.1 Xbee adapter knock list
+	Mark (DONE) 
+
+
+Identify Similar product repo (no lib, multiple examples)
+	(DONE) -- User codebender for display and include github
+
+Polish Examples folder
+    (DONE)
+	
+Finish HookUp Guide text
+	(Hookup guide link:
+	https://learn.sparkfun.com/tutorials/teensy-xbee-adapter-hookup-guide)
+	
+	(DONE)Fix LED pins (should be f4-11)
+	
+Photograph with Juan
+	(DONE)
+	
+Push to marcom

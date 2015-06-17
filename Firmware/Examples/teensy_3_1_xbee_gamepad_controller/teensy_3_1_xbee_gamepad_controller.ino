@@ -1,3 +1,9 @@
+//This example is used to make an 8 button (NES like) remote game pad.  It tracks button-down
+//and button-up information so that the games are playable.  Without tracking that stuff,
+//your character would only have one level of jump.
+//
+//The other end of the link behaves like a USB keyboard and 'presses keys' for the emulator
+//
 //To use this example you will need to have the following connections:
 //  4 buttons connected to pins 14 through 17, normally open, short to ground.
 //  8 LEDs connected to pins 4 through 11, each with their own current limiting resistor
@@ -63,7 +69,7 @@ void loop()
   //*******************************************************************//
   // Transmitting.  This section reads button states and builds a packet
   // that is shipped over the airwaves.  The basic packet has a start
-  // char of ~, 9 user bytes, and terminates with a carrage return
+  // char of ~, 9 user bytes, and terminates with a carriage return
   // "~000000000\r"
 
   //Get the states

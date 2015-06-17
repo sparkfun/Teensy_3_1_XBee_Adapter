@@ -5,13 +5,14 @@
 //  The sketch is intended to have leds with a common ground, though using a common power
 //  will work invertedly.
 //
-//  An Teensy 3.1 to XBee adapter board with XBee
-//  An 2nd XBee connected to serial terminal (USB dongle with Tera Term for example)
+//You will also need:
+//  A Teensy 3.1 to XBee adapter board with XBee
+//  A 2nd XBee connected to serial terminal (USB dongle with Tera Term for example)
 //  The S-UART / UART1 switch set to S-UART for a software UART using the altSoftSerial library
 //  
-//  Load the sketch and press the buttons.  In the serial terminal the '0's change to '1's.
-//  Press 1-8 on the keyboard in the terminal window.  The LEDs will illuminate.  Press enter or
-//  any other key to clear the LEDs.
+//Load the sketch and press the buttons.  In the serial terminal the '0's change to '1's.
+//Press 1-8 on the keyboard in the terminal window.  The LEDs will illuminate.  Press enter or
+//any other key to clear the LEDs.
   
   
 // Define pin locations
@@ -58,7 +59,7 @@ void loop() {
   //*******************************************************************//
   // Transmitting.  This section reads button states and builds a packet
   // that is shipped over the airwaves.  The basic packet has a start
-  // char of ~, 9 user bytes, and terminates with a carrage return
+  // char of ~, 9 user bytes, and terminates with a carriage return
   // "~000000000\r"
   
   int buttonState;
@@ -113,8 +114,8 @@ void loop() {
 
   //*******************************************************************//
   // Receiving.  This section check for new serial data and turns on an
-  // LED that corrisponds to a number key entered.  All other characters
-  // including return, LF, CR, etc cause all LEDs to be turned off.
+  // LED that corresponds to a number key entered.  All other characters
+  // including return, LF, CR, etc. cause all LEDs to be turned off.
   if (altSerial.available())
   {
     char c;

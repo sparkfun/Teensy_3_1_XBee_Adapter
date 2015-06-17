@@ -1,9 +1,18 @@
-/* Buttons to USB Keyboard Example
+//Buttons to USB Keyboard Example
+//
+//You must select Keyboard from the "Tools > USB Type" menu
+//
+//This code decodes packets from a XBee gamepad controller
+//sketch.  It behaves like a keyboard in that pressing and holding
+//a button will make repeated characters appear.  It uses the
+//Teensy functions Keyboard.press() and Keyboard.release() to do
+//this.
+//
+//To test, get the gamepad running, open a text editor on your
+//computer and press some game buttons.  Try holding one- the
+//associated character should start repeating like it would if
+//you held down a real keyboard key.
 
-   You must select Keyboard from the "Tools > USB Type" menu
-
-   This example code is in the public domain.
-*/
 #define PACKET_LENGTH 10
 #define START_SYMBOL '~'
 
