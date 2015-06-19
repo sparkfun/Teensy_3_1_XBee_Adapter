@@ -13,6 +13,8 @@
 //Load the sketch and press the buttons.  In the serial terminal the '0's change to '1's.
 //Press 1-8 on the keyboard in the terminal window.  The LEDs will illuminate.  Press enter or
 //any other key to clear the LEDs.
+
+//Marshall @ SparkFun Electronics, 2015.
   
   
 // Define pin locations

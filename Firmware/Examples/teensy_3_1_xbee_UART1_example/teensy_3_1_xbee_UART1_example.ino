@@ -9,6 +9,10 @@
 // Out the UART1 TX pin -> onto the airwaves -> out the SBee serial terminal
 //
 //Be sure to select UART1 on the adapter board's switch for HW serial
+//
+//Marshall@SparkFun Electronics, 2015
+
+
 
 void setup()
 {

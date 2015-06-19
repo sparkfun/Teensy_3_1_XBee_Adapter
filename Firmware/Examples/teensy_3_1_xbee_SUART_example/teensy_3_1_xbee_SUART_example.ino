@@ -10,6 +10,9 @@
 // Out the S-UART TX pin -> onto the airwaves -> out the SBee serial terminal
 //
 //Be sure to select S-UART on the adapter board's switch for HW serial
+//
+//Marshall@SparkFun Electronics, 2015
+  
   
 AltSoftSerial altSerial;
 

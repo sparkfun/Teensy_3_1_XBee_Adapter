@@ -15,6 +15,8 @@
 //  Press 1-8 on the keyboard in the terminal window.  The LEDs will illuminate.  Press enter or
 //  any other key to clear the LEDs.
 
+//Marshall@SparkFun Electronics, 2015
+
 
 // Define pin locations
 int led = 13;

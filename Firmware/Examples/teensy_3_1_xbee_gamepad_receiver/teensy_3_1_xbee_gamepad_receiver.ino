@@ -12,6 +12,9 @@
 //computer and press some game buttons.  Try holding one- the
 //associated character should start repeating like it would if
 //you held down a real keyboard key.
+//
+//Marshall@SparkFun Electronics, 2015
+
 
 #define PACKET_LENGTH 10
 #define START_SYMBOL '~'
