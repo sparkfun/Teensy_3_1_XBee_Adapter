@@ -30,13 +30,13 @@ void loop() {
   // Take data received from the serial monitor and pass it to the HW UART
   if(Serial.available())
   {
-    altSerial.print(Serial.read(), BYTE);
+    altSerial.write(Serial.read());
   }
 
   // Take data received from the HW UART and pass it to the serial monitor
   if(altSerial.available())
   {
-    Serial.print(altSerial.read(), BYTE);
+    Serial.write(altSerial.read());
   }
   
   //Wait to reduce serial load
